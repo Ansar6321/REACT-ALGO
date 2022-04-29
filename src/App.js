@@ -1,13 +1,12 @@
-import React from 'react';
-import './global.css';
-import ProductList from './ProductList';
+import React, { Component } from 'react'
+import SignUpForm from './SignUpForm'
 
-const App = () => {
+export default class App extends Component {
+  render() {
     return (
-        <div className='container'>
-            <ProductList/>
-        </div>
-    );
-};
-
-export default App;
+      <div>
+          <SignUpForm/>
+      </div>
+    )
+  }
+}
